@@ -1,9 +1,9 @@
-const labelYear = ["Africa", "North America", "South America", "Asia", "Europe", "Oceania"]
+const labelContinent = ["Africa", "North America", "South America", "Asia", "Europe", "Oceania"]
     
     
     
     const dataObj = {
-        labels: labelYear,
+        labels: labelContinent,
         datasets: [
             {
                 label: "China",
@@ -92,14 +92,35 @@ const dataObject = {
     labels: labelAgriculture,
     datasets: [
         {
-            label: "Beef",
+            label: "Causes of deforestation",
             data:  [41,18.4,13,9.6,7.3,5.6,3.6,1.1,0.5],
             borderWidth: 2,
             fill: false,
-            backgroundColor: "rgb(255, 240, 122)",
-            borderColor: "rgb(255, 240, 122)"
+            backgroundColor:[ "rgb(133, 42, 28)",
+                            "rgb(133, 42, 28)",
+                            "rgb(240, 206, 197",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)"
+
+        ],
+            borderColor:[ "rgb(133, 42, 28)",
+                            "rgb(133, 42, 28)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+                            "rgb(240, 206, 197)",
+
+        ]
+
         },
-        
+      
     ]
 };
 
@@ -112,6 +133,8 @@ new Chart("causes",
                 legend: {
                     display: false
                 },
+
+                
                 title: {
                     display: true,
                     text: ["Drivers of deforestation"],
@@ -122,6 +145,50 @@ new Chart("causes",
             }
         });
 
-        
+        let counter=1349;
 
-   
+        function hello() {
+            //console.log ('Hello');
+            //document.getElementById("headerID").innerHTML = 'Hello';
+            counter = counter +1;
+            //document.getElementById("headerID").innerHTML = counter;
+            document.getElementById("IPledge").innerHTML =   counter+ " " + "people have pledged to play their part." 
+            
+        }
+
+
+
+        const labelYear = ["1970", "1975", "1980","1985", "1990", "1995", "2000", "2005", "2010", "2018"]
+    
+    
+    
+        const dataLPI = {
+            labels: labelYear,
+            datasets: [
+                {
+                    label: "LPI index",
+                    data:  [1,0.935558012,0.815080934, 0.697531144, 0.626811227,0.540360964, 0.472215375, 0.422031513, 0.351531515,0.308975673],
+                    borderWidth: 2,
+                    fill: false,
+                    borderColor: "rgb(166, 75, 50)",
+                    borderWidth: 5,
+                }, ] }
+    
+                new Chart("LPIchart",
+                {
+                    type: "line",
+                    data: dataLPI,
+                    options: { 
+                        maintainAspectRatio: false,
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: ["Living Planet Index 1970-2018"],
+                            fontFamily: "Bradley Hand",
+                            fontSize: 30,
+                            fontColor: 'rgb(81, 120, 82)',
+                        }
+                    }
+                });

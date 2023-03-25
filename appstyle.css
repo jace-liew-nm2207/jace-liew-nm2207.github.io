@@ -26,7 +26,7 @@ body{
   #clickMe {
     position: absolute;
     top: 90%;
-    left: 44%; 
+    left: 40%; 
     text-align: center
   }
 
@@ -127,8 +127,8 @@ body{
     height: 600px;
     object-fit: contain;
     position: absolute;
-  top: 330%;
-  left: 0%; 
+  top: 350%;
+  left: -10%; 
 }
 
 
@@ -148,8 +148,9 @@ body{
   height: 800px;
   object-fit: contain;
   position: absolute;
-top: 450%;
-left: 28%; 
+    top: 455%;
+    left: 30%;
+  
 }
 
 #clickME {
@@ -163,12 +164,13 @@ left: 28%;
   background-color: #ebd243;
   border-color:  #ebd243;
   font-size: 15px;
+  border: none;
+  padding: 20px;
+  margin-left: 30px;
  
 }
 
-#container4 {
-  margin-top: 700px;
-}
+
 
 #container5 {
   margin-top: 330px;
@@ -245,3 +247,75 @@ margin-top: 50%;
 
  }
 
+ #causesGraph{
+  margin-top: 60px;
+  width: 800px;
+  height: 600px
+ }
+
+ #text{
+padding-left: 200px;
+padding-right: 200px;
+ }
+
+
+
+#mark3 {
+  background-color: rgb(64, 94, 58);
+  color: white;
+  border-radius: 10px;
+  padding: 10px
+}
+
+#pledge {
+  border-radius: 10px;
+  padding:20px;
+  background-color: #4d2c44;
+  color:white;
+  border: none;
+  font-size: 20px;
+}
+
+.flexImages {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: rgb(172, 219, 179)
+  
+}
+
+.flexContent {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(172, 219, 179)
+}
+
+.flexContent > div {
+  background-color: #426558;
+  width: 400px;
+  margin: 8px;
+  padding:10px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+  color: white;
+  font-family: Andale Mono;
+
+}
+
+.container4 {
+  margin-top: 100px}
+
+  #soyKoala {
+    width: 800px;
+    height: 800px;
+    object-fit: contain;
+    position: absolute;
+  top: 380%;
+  left: 55%; 
+}
+
+#LPIchart {
+  width:200px;
+  height:400px
+}
