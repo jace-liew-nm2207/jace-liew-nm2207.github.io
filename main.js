@@ -26,9 +26,9 @@ const labelContinent = ["Africa", "North America", "South America", "Asia", "Eur
                     title: {
                         display: true,
                         text: ["Reduction in forested areas over the years"],
-                        fontFamily: "TrebuchetMS",
-                        fontSize: 24,
-                        fontColor: 'rgb(0,120,0)',
+                        fontFamily:"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+                        fontSize: 25,
+                        fontColor: 'rgb(81, 120, 82)',
                     }
                 }
             });
@@ -63,8 +63,8 @@ const labelContinent = ["Africa", "North America", "South America", "Asia", "Eur
                     title: {
                         display: true,
                         text: ["Share of tropical deforestation in % in 2013"],
-                        fontFamily: "Bradley Hand",
-                        fontSize: 30,
+                        fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+                        fontSize: 25,
                         fontColor: 'rgb(81, 120, 82)',
                     }
                 }
@@ -138,8 +138,8 @@ new Chart("causes",
                 title: {
                     display: true,
                     text: ["Drivers of deforestation"],
-                    fontFamily: "Bradley Hand",
-                    fontSize: 30,
+                    fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+                    fontSize: 25,
                     fontColor: 'rgb(81, 120, 82)',
                 }
             }
@@ -186,9 +186,58 @@ new Chart("causes",
                         title: {
                             display: true,
                             text: ["Living Planet Index 1970-2018"],
-                            fontFamily: "Bradley Hand",
-                            fontSize: 30,
+                            fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+                            fontSize: 25,
                             fontColor: 'rgb(81, 120, 82)',
-                        }
+                        },
+                        responsive: true
                     }
                 });
+
+
+
+                function GLT() {
+                    var x = document.getElementById("golden");
+                    if (x.innerHTML === " ") {
+                      x.innerHTML = "There are many monkey species that are endemic to the Amazon rainforest in Brazil,one of which is the Golden Lion Tamarin. Its name, is derived from its strikingly orange-coloured lion-like mane. The tamarin primarily lives in trees and forage for fruit, insects and even birds by traveling between branches. But deforestation to support the exponential growth of the logging and agriculture industries has destroyed the animal’s natural habitat. <b>Today, only 2-3% of its original rainforest habitat remains </b>, threatening the survival of the species. The International Union for Conservation of Nature (IUCN) currently classifies the Golden Lion Tamarin as an <b>endangered species</b>, and there are <b>only 2500 left in the wild. </b>";
+                    } else {
+                      x.innerHTML = " ";
+                    }
+                  }
+
+                  function jaguar() {
+                    var x = document.getElementById("jag");
+                    if (x.innerHTML === " ") {
+                      x.innerHTML = "Jaguars are the largest cat in the Americas. Unfortunately, they are also one of the species in the Amazon currently threatened by the destruction of the ecosystem. These big cats are strong swimmers and climbers, and require large areas of tropical rainforest and stretches of river bank to survive. They also hunt most animals in the Amazon ranging from deers, armadillos, monkeys and lizards, playing an important part in population control of other species. Jaguars are classified as <b>near threatened</b> and there are <b>only 173000 left in the wild today.</b>";
+                    } else {
+                      x.innerHTML = " ";
+                    }
+                  }
+
+                  function macaw() {
+                    var x = document.getElementById("spinx");
+                    if (x.innerHTML === " ") {
+                      x.innerHTML = " This dusty blue bird earned popular attention for inspiring the characters in the 2011 animated film, Rio. The Spix’s Macaw is the rarest parrot species in the world, and were <b>declared extinct in the wild in 2018</b>. These macaws were native to the arid lowland forests in the interior and northeast of Brazil. A species of tree (Tabebuia caraiba) was critical to the birds habitat, with one study noting that where these trees had been cleared, the macaw had disappeared. Habitat loss due to agriculture, combined with illegal trapping for the pet trade, is theorized to have led to their decline.";
+                    } else {
+                      x.innerHTML = " ";
+                    }
+                  }
+
+
+                  let i = 0;
+                  let txt = "So...why should I care?";
+                  let speed = 130; // speed in miliseond
+                  
+                  
+                  
+                  function typeWriter() {
+                      
+                      // start with 0 letters, so the typewriter will start
+                      if (i < txt.length) {
+                      document.getElementById("care").innerHTML += txt.charAt(i);
+                      
+                      // increasing i by 1 every milisecond
+                      i++;
+                      setTimeout(typeWriter, speed);
+                    }
+                  }
