@@ -1,13 +1,21 @@
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
 #backgroundImage {
     width: 100%;
     height: 830px;
 }
 
 body{
-  background-color: rgb(172, 219, 179)
+  
+  overflow-x: hidden;
+  margin: 0px;
 }
 
-.container1 {
+.container0 {
     position: relative;
     text-align: center;
     color: white;
@@ -31,7 +39,7 @@ body{
   }
 
 
-  .container1 .btn {
+  .container0 .btn {
     position: absolute;
     top: 80%;
     left: 50%;
@@ -49,11 +57,40 @@ body{
   }
 
   #container2 {
-    height: 600px;
-    background-color: rgb(172, 219, 179);
+    height: 100%;
+    margin:0px;
+    background-color: rgb(203, 237, 208);
+   
   }
 
 
+  #container1{
+    height:100%;
+    
+    position:relative;
+    background-color: #455540;
+  }
+
+  
+
+  #container3{
+    height:100%;
+    
+    position:relative;
+    background-color: #455540;
+  }
+
+  #container6 {
+    background-color: white;
+    height:100%
+  }
+  
+  #container4{
+    height:100%;
+    
+    position:relative;
+    background-color:#455540; ;
+  }
   
   .slider {
     
@@ -89,8 +126,12 @@ body{
   
 
   #typewriter {
-    font-family: Andale Mono;
-    animation-iteration-count: infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: relative;
+    padding-top:360px
+
+
   }
 
   mark {
@@ -110,13 +151,21 @@ body{
     text-align: center;
   }
 
+  #mark2 {
+    background-color:#455540;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
   #koalaCauses {
       width: 600px;
       height: 600px;
       object-fit: contain;
-      position: absolute;
-      top: 380%;
-      left: 60%; 
+      position: relative;
+      top: -90vh;
+      left: 98vh; 
   }
 
   #beefKoala {
@@ -135,12 +184,12 @@ body{
   text-align: center
 }
 
-#container3 {
+#container7 {
   margin-top: 160px;
 }
 
 
-#human {
+/*#human {
   width: 800px;
   height: 800px;
   object-fit: contain;
@@ -148,7 +197,7 @@ body{
     top: 680%;
     left: 30%;
   
-}
+}*/
 
 #clickMe {
   
@@ -171,7 +220,7 @@ body{
 
 
 
-#container5 {
+#container9 {
   margin-top: 330px;
 }
 
@@ -179,14 +228,14 @@ body{
   text-align: center;
   font-family:Andale Mono ;
   font-size: 30px;
-  margin-top: 400px;
+  
 }
 
 #happier-chart {
   position: relative;
-  
   height: 60vh;
   width: 40vw;
+ 
 }
 
 input[type=text] {
@@ -236,19 +285,18 @@ padding-right: 100px;
 margin:0px;
 font-size:17px;
 line-height:1.5;
-background-color:rgb(172, 219, 179);
+background-color:rgb(203, 237, 208);
 color: rgb(37, 56, 33);
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
-
-
  }
 
 
 
+
  #causesGraph{
-  margin-top: 60px;
-  width: 800px;
-  height: 600px
+  
+  width: 550px;
+  height: 550px
  }
 
  #text{
@@ -279,14 +327,14 @@ padding-right: 200px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  background-color: rgb(172, 219, 179)
+  background-color: rgb(203, 237, 208);
   
 }
 
 .flexContent {
   display: flex;
   justify-content: center;
-  background-color: rgb(172, 219, 179)
+  background-color: rgb(203, 237, 208);
 }
 
 .flexContent > div {
@@ -303,7 +351,7 @@ padding-right: 200px;
 
 }
 
-.container4 {
+.container7 {
   margin-top: 100px}
 
   #soyKoala {
@@ -317,7 +365,8 @@ padding-right: 200px;
 
 #LPIchart {
   width:200px;
-  height:400px
+  height:400px;
+  padding-top: 30px
 }
 
 #livingPlanet {
@@ -338,10 +387,7 @@ padding-right: 200px;
   padding-right:50px;
 }
 
-#canvas-container{
-  width:930px;
-  height:450px
-}
+
 
 #pointer1 {
   cursor: pointer;
@@ -354,3 +400,48 @@ padding-right: 200px;
 #pointer3 {
   cursor: pointer;
 }
+
+#container8{
+  width:800px;
+  height:400px
+}
+
+#map{
+  position: relative;
+  top: -40vh;
+  
+}
+
+
+  #flexGraphs {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #flexGraphs > div {
+  
+    margin: 20px;
+    padding: 20px;
+  
+  }
+
+
+  .vertical-center {
+    display: flex;
+    justify-content: center;
+    height: 50%
+ 
+    
+  }
+  
+.vertical-center > div {
+  
+    margin: 20px;
+    padding: 20px;
+  
+  }
+
+  
+
+  
