@@ -34,7 +34,7 @@ const labelContinent = ["Africa", "North America", "South America", "Asia", "Eur
             });
 
 // DOUGHNUT CHART FOR SHARE OF DEFORESTATION
-            const labelCountry = ["Brazil(excl. Brazil and Mexico", "Americas", "Africa", "Indonesia", "Asia and Pacific (excl. Indonesia and India","Mexico","India"]
+            const labelCountry = ["Brazil", "Americas(excl. Brazil & Mexico)", "Africa", "Indonesia", "Asia and Pacific (excl. Indonesia and India","Mexico","India"]
             const doughnutObj = {
                 labels: labelCountry,
                 datasets: [
@@ -67,8 +67,9 @@ const labelContinent = ["Africa", "North America", "South America", "Asia", "Eur
                         text: ["Share of tropical deforestation in % in 2013"],
                         fontFamily: "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
                         fontSize: 25,
-                        fontColor: 'rgb(255,255,255)',
-                    }
+                        fontColor: 'rgb(37, 56, 33)',
+                    },
+                    responsive: true
                 }
             });
 
@@ -139,13 +140,45 @@ new Chart("causes",
                 
                 title: {
                     display: true,
-                    text: ["Overall drivers of deforestation"],
+                    text: ["Overall drivers of deforestation (Fig.1)"],
                     fontFamily: "TrebuchetMS",
                     fontSize: 20,
-                    fontColor: 'rgb(199, 233, 204)',
+                    fontColor: 'rgb(64, 94, 58)',
                 }
             }
         });
+
+/* //FUNCTION TO ADD DATA
+
+function addData(causes2, label, data) {
+  causes2.data.labels.push(label);
+  causes2.data.datasets.forEach((dataset) => {
+      dataset.data.push(data);
+  });
+  chart.update();
+} 
+
+//chatgpt
+var causes2 = new Chart("causes", {
+  type: "bar",
+  data: dataObject,
+  options: { 
+      maintainAspectRatio: false,
+      legend: {
+          display: false
+      },
+
+      title: {
+          display: true,
+          text: ["Overall drivers of deforestation (Fig.1)"],
+          fontFamily: "TrebuchetMS",
+          fontSize: 20,
+          fontColor: 'rgb(64, 94, 58)',
+      }
+  }
+}); */
+
+
 
 //PLEDGE
         let counter=1349;
@@ -171,10 +204,10 @@ new Chart("causes",
                 {
                     label: "LPI index",
                     data:  [1,0.935558012,0.815080934, 0.697531144, 0.626811227,0.540360964, 0.472215375, 0.422031513, 0.351531515,0.308975673],
-                    borderWidth: 2,
+                  
                     fill: false,
                     borderColor: "rgb(140, 44, 17)",
-                    borderWidth: 5,
+                    borderWidth: 2,
                 }, ] }
     
                 new Chart("LPIchart",
@@ -203,7 +236,7 @@ new Chart("causes",
                 function GLT() {
                     var x = document.getElementById("golden");
                     if (x.innerHTML === " ") {
-                      x.innerHTML = "There are many monkey species that are endemic to the Amazon rainforest in Brazil,one of which is the Golden Lion Tamarin. Its name, is derived from its strikingly orange-coloured lion-like mane. The tamarin primarily lives in trees and forage for fruit, insects and even birds by traveling between branches. But deforestation to support the exponential growth of the logging and agriculture industries has destroyed the animal’s natural habitat. <b>Today, only 2-3% of its original rainforest habitat remains </b>, threatening the survival of the species. The International Union for Conservation of Nature (IUCN) currently classifies the Golden Lion Tamarin as an <b>endangered species</b>, and there are <b>only 2500 left in the wild. </b>";
+                      x.innerHTML = "The Golden Lion Tamarin is one of the monkey species endemic to the Amazon. It has a strikingly orange-coloured lion-like mane, hence its name! The tamarin primarily lives in trees and forage for fruit, insects and birds. But deforestation to support the exponential growth of the logging and agriculture industries has destroyed the Tamarin's natural habitat. <b>Today, only 2-3% of its original rainforest habitat remains </b>, threatening the survival of the species. There are <b>only 2500 left in the wild</b>. <br><br> International Union for Conservation of Nature (IUCN) status: <b>endangered</b>";
                     } else {
                       x.innerHTML = " ";
                     }
@@ -212,7 +245,7 @@ new Chart("causes",
                   function jaguar() {
                     var x = document.getElementById("jag");
                     if (x.innerHTML === " ") {
-                      x.innerHTML = "Jaguars are the largest cat in the Americas. Unfortunately, they are also one of the species in the Amazon currently threatened by the destruction of the ecosystem. These big cats are strong swimmers and climbers, and require large areas of tropical rainforest and stretches of river bank to survive. They also hunt most animals in the Amazon ranging from deers, armadillos, monkeys and lizards, playing an important part in population control of other species. Jaguars are classified as <b>near threatened</b> and there are <b>only 173000 left in the wild today.</b>";
+                      x.innerHTML = "Jaguars are the largest cat in the Americas. Unfortunately, they are also another species in the Amazon currently threatened by the destruction of the ecosystem, and there are <b>only 173000 left in the wild today</b>. Jaguars are strong swimmers and climbers, and require large areas of rainforest and stretches of river bank to survive. They also hunt most animals in the Amazon such as deers and lizards, playing an important part in population control of other species. <br><br> IUCN status: <b>near threatened</b>";
                     } else {
                       x.innerHTML = " ";
                     }
@@ -221,7 +254,7 @@ new Chart("causes",
                   function macaw() {
                     var x = document.getElementById("spinx");
                     if (x.innerHTML === " ") {
-                      x.innerHTML = " This dusty blue bird earned popular attention for inspiring the characters in the 2011 animated film, Rio. The Spix’s Macaw is the rarest parrot species in the world, and were <b>declared extinct in the wild in 2018</b>. These macaws were native to the arid lowland forests in the interior and northeast of Brazil. A species of tree (Tabebuia caraiba) was critical to the birds habitat, with one study noting that where these trees had been cleared, the macaw had disappeared. Habitat loss due to agriculture, combined with illegal trapping for the pet trade, is theorized to have led to their decline.";
+                      x.innerHTML = " The Spix's Macaw gained popular attention for inspiring the characters in the <b>2011 animated film, Rio</b>. The Spix’s Macaw is the rarest parrot species in the world, and were native to the arid lowland forests in the interior and northeast of Brazil. A species of tree <b>(Tabebuia caraiba) was critical to the birds habitat</b>, with one study noting that where these trees had been cleared, the macaw had disappeared. Habitat loss due to agriculture, combined with illegal trapping for the pet trade, have led to their extinction. <br><br> IUCN status: <b>extinct</b> in the wild since 2018";
                     } else {
                       x.innerHTML = " ";
                     }
@@ -259,7 +292,7 @@ d3.csv("https://2207-resources.s3.ap-southeast-1.amazonaws.com/annual-deforestat
   }
 
   // Define the years for which we want to create frames
-  const years = d3.range(1990, 2015, 5);
+  const years = [1990,2000,2010,2015]
 
 
 // Create frames for each year using the filtered data
@@ -294,7 +327,7 @@ for (let i = 0; i < years.length; i++) {
     text: frames[0].data[0].text,
     zauto: false,
     zmin: 0,
-    zmax: 1000000,
+    zmax: 500000,
   // this is your data object
   }];
 
@@ -448,11 +481,11 @@ const data = fetch(
         title: {
           display: true,
           text: [
-            "Main drivers of deforestation in Brazil (2001-2021)",
+            "Main drivers of deforestation in Brazil (2001-2021) (Fig.2)",
           ], //set this to 'Predicting likelihood of deepfake sharing','for Older People'
           fontFamily: "TrebuchetMS",
           fontSize: 20,
-          fontColor: "rgb(199, 233, 204)",
+          fontColor: "rgb(64, 94, 58)",
         },
 
        
@@ -462,4 +495,47 @@ const data = fetch(
   });
 
 
+  //TYPEWRITER2
+  let n = 0;
+  let text = "So why should I care?";
+  let speed2 = 130; // speed in miliseond
   
+  
+  
+  function typeWriter2() {
+      
+      // start with 0 letters, so the typewriter will start
+      if (n < text.length) {
+      document.getElementById("care").innerHTML += text.charAt(n);
+      
+      // increasing i by 1 every milisecond
+      n++;
+      setTimeout(typeWriter2, speed2);
+    }
+  }
+
+  //TO TOP
+  let mybutton = document.getElementById("up");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//BEEF EXPLANATION
+function beefExp() {
+  document.getElementById("human").src = "resources/economicgrowth.png";
+  
+}

@@ -65,7 +65,7 @@ body{
 
 
   #container1{
-    height:100%;
+ 
     
     position:relative;
     background-color: #455540;
@@ -77,19 +77,19 @@ body{
     height:100%;
     
     position:relative;
-    background-color: #455540;
+    background-color: white;
   }
 
   #container6 {
-    background-color: white;
-    height:100%
+    background-color: rgb(203, 237, 208);
+    
   }
   
   #container4{
     height:100%;
     
     position:relative;
-    background-color:#455540; ;
+    background-color:rgb(219, 247, 223);
   }
   
   .slider {
@@ -159,34 +159,25 @@ body{
     text-align: center;
   }
 
-  #koalaCauses {
-      width: 600px;
-      height: 600px;
-      object-fit: contain;
-      position: relative;
-      top: -90vh;
-      left: 98vh; 
-  }
+ 
 
   #beefKoala {
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
     object-fit: contain;
-    position: absolute;
-  top: 575%;
-  left: -10%; 
+    position: relative;
+  top: -55vh;
+  left: 95vh; 
 }
 
 
 
 #but {
-  
+  padding-top: 20px;
   text-align: center
 }
 
-#container7 {
-  margin-top: 160px;
-}
+
 
 
 /*#human {
@@ -206,30 +197,24 @@ body{
 }
 
 #whee{
-  font-family:Andale Mono ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 20px;
   background-color: #ebd243;
   border-color:  #ebd243;
-  font-size: 15px;
+  font-size: 20px;
   border: none;
-  padding: 20px;
-  margin-left: 30px;
+ padding:25px;
   cursor: pointer;
+  position:absolute;
+  margin-top: -13%;
+  margin-left: -10%
  
 }
 
 
 
-#container9 {
-  margin-top: 330px;
-}
 
-#care{
-  text-align: center;
-  font-family:Andale Mono ;
-  font-size: 30px;
-  
-}
+
 
 #happier-chart {
   position: relative;
@@ -239,21 +224,21 @@ body{
 }
 
 input[type=text] {
-  width: 100%;
+  width: 300%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 2px solid #ccc;
 }
 
 textarea {
-  width: 100%;
+  width: 300%;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #f8f8f8;
   font-size: 16px;
   resize: none;
@@ -268,6 +253,9 @@ input[type=submit] {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
+  text-align: center;
+  width: 300%;
+  font-size: 15px;
 }
 
 form {
@@ -283,18 +271,18 @@ border-collapse: collapse;
 padding-left:100px;
 padding-right: 100px;
 margin:0px;
-font-size:17px;
+font-size:19px;
 line-height:1.5;
-background-color:rgb(203, 237, 208);
+background-color:white;
 color: rgb(37, 56, 33);
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
 
 
 
  #causesGraph{
-  
+  padding-top: 40px;
   width: 550px;
   height: 550px
  }
@@ -355,12 +343,12 @@ padding-right: 200px;
   margin-top: 100px}
 
   #soyKoala {
-    width: 800px;
-    height: 800px;
+    width: 450px;
+    height: 450px;
     object-fit: contain;
-    position: absolute;
-  top: 615%;
-  left: 55%; 
+    position: relative;
+  top: -130vh;
+  left: 40vh; 
 }
 
 #LPIchart {
@@ -402,43 +390,152 @@ padding-right: 200px;
 }
 
 #container8{
-  width:800px;
-  height:400px
+  margin:0px;
+  background-color: #70836a;
 }
 
-#map{
+/*#map{
   position: relative;
   top: -40vh;
   
-}
+  
+}*/
 
 
   #flexGraphs {
     display: flex;
     flex-direction: column;
     
+    
   }
   
   #flexGraphs > div {
   
-    margin: 20px;
+    margin-left: 100px;
     padding: 20px;
   
   }
 
 
-  .vertical-center {
+  
+  #flexDough {
     display: flex;
     justify-content: center;
-    height: 50%
- 
+    
     
   }
   
-.vertical-center > div {
+  #flexDough > div {
   
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
+  
+  }
+
+
+  form {
+   
+      width: 50%;
+      margin-left : -30%
+
+
+  }
+
+  #up {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:rgb(200, 149, 149);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  
+  #up:hover {
+    background-color: rgb(150, 57, 31);
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 320px;
+    height: 320px;
+    perspective: 1000px;
+
+   
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  
+   
+  }
+  
+  .flip-card-back {
+    background-color: #426558;
+    color: white;
+    transform: rotateY(180deg);
+
+  }
+
+
+  #flexflex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ 
+  }
+  
+  #flexflex > div {
+  
+    margin-left: 0px;
+    padding: 20px;
+  
+  }
+
+  
+  #flexflex2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ 
+  }
+  
+  #flexflex2 > div {
+  
+    margin-left: 0px;
+    padding: 60px;
   
   }
 

@@ -11,8 +11,12 @@
 </head>
 <body>
 
+<!--back to top button-->
+    <button onclick="topFunction()" id="up" title="Go to top"><b>Top</b></button>
+
 <!--cover page of website-->
 <div class="container0" style="position:relative">
+
     <img src="resources/image2.jpeg" id="backgroundImage">
     <div class="centered">What is <mark>deforestation</mark>, and why should I care?</div>
     <a href="#container1"><img src ="resources/Untitled design.png" class="btn" style="width:400px" onClick="alert('Hello there, I hope you learn something about deforestation today!')"></a>
@@ -21,83 +25,119 @@
 </div>
 
 <!-- what is deforestation? -->
-<div id="container1" onmouseover="typeWriter()">
+<div id="container1" style="min-height:100%" onmouseover="typeWriter()">
 
    <center>
         <p id="typewriter" style=" font-size: 60px; margin: 0px"></p>
-        <p style="text-align: center; padding-left:120px; padding-right: 120px;font-size: 20px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(199, 233, 204)">
+        <p style="text-align: center; padding-left:120px; padding-right: 120px;font-size: 22px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(199, 233, 204)">
             Deforestation is the conversion of forested areas to non-forest land use such as arable land,
             urban use, logged area or wasteland. <br> According to the Food and Agriculture Organization of the United Nations (FAO),  
             deforestation is also the 
             long-term reduction of tree canopy cover below the 10% threshold. </p>
     </center>
 
-
 </div>
 
 <!-- introduction -->
-
-<div class="main" id="container2" style="position:relative" >
-    
+<div class="main" id="container2" style="position:relative; height: auto" >
 
     <div id="text" style="position:relative; padding-top: 60px">
        
         <p style="text-align: left; font-size: 20px; line-height: 1.5;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
-    As <b>nations develop and economies grow</b>, the thirst for resources has also increased in order to satisfy 
-    our current global population of <b>8 billion people</b>.
-    Deforestation is threfore occurring at a rapid rate and 
-    we are not sure how long more the earth can hang on to its last resources left.  Up to <b>15 billion trees</b> are now being 
-    cut down every year across the world, species are going <b>extinct</b> and <b>millions of lives</b> are affected.</p>
+        As <b>nations develop and economies grow</b>, the thirst for resources has also increased in order to satisfy 
+        our current global population of <b>8 billion people</b>.
+        Deforestation is threfore occurring at a rapid rate and 
+        we are not sure how long more the earth can hang on to its last resources left.  Up to <b>15 billion trees</b> are now being 
+        cut down every year across the world, species are going <b>extinct</b> and <b>millions of lives</b> are affected.</p>
        
         <p style="text-align: center; padding-top: 60px;font-size: 25px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>Would you stay indifferent?</u></p>
     </div>
 
-     <div style="padding:50px; position:relative"> <center><iframe style="text-align: center; border-radius: 20px;  border: 5px solid #455540;" Width="560" height="315" src="https://www.youtube.com/embed/Ic-J6hcSKa8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-        <p style="text-align: center; font-size: 15px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> What this short video to find out more about deforestation!</p>
+     <div style="padding:50px; position:relative"> <center><iframe style="text-align: center; border-radius: 20px;  position: relative; border: 5px solid #455540;" Width="560" height="315" src="https://www.youtube.com/embed/Ic-J6hcSKa8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        <p style="text-align: center; font-size: 16px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> What this short video to find out more about deforestation!</p>
     </div>
 
 </div>
 
-
-
 <!--global deforestation map + slider-->
-<div id="container3" style="position:relative">
-    <div id='myDiv' style="height: 100%"><!-- Plotly chart will be drawn inside this DIV --></div> 
+<div id="container3" style="position:relative; height:auto">
+
+    <div><p style="text-align: center; font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         color:rgb(37, 56, 33); padding-top:30px"> <b>What does deforestation look like on a global scale?</b></p></div>
+
+         <p style="text-align: center; font-size: 16px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         color:rgb(37, 56, 33);"><i>Click on the play/pause buttons, or drag the slider to see the deforestation rate over the years!</i></p>
+
+    <div id='myDiv' style="height: 600px"><!-- Plotly chart will be drawn inside this DIV --></div> 
+
+    <div><p style="text-align: left; padding-top: 20px; padding-left: 150px; padding-right: 150px;font-size: 20px;font-family:'Gill Sans',
+    'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 1.5; color: rgb(37, 56, 33);">  Deforestation has consistently 
+    occurred globally over the years, especially in developing countries such as Brazil and Indonesia as land is needed for 
+    urbanisation and agriculture. 
+    <br><br> However, with the 
+    increasing pressure to be sustainable
+    on many companies and governments, the rate of forest loss has declined substantially over the past three decades. The annual 
+    rate of deforestation was estimated at 
+    10 million hectares between 2015-2020, compared with 12 million during 2010-2015. The area of forest under protection has also 
+    reached roughly 726 million hectares, 
+    nearly 200 million more than in 1990. 
+    <br><br>
+    Still, there is cause for great concern, according to FAO. Furthermore, past deforestation acts have
+    left permanent consequences on the environment.</p>
     </div>
 
-    
-
+</div>
 
 <!-- doughnut chart showing the share of deforestation by countries-->
-<div id="container4"  style="position:relative; padding-top: 50px">
-    <div id="doughnutChart" style="margin-left:0px"> 
-        <canvas id="happier-chart" ></canvas>  </div>
-    <img id="map" src="resources/map.png" style="object-fit: contain; width:500px; height: 500px;"> 
+<div id="container4"  style="position:relative; padding-top: 50px; height:auto">
+
+    <div id="flexDough">
+
+        <div id="doughnutChart" style="margin-left:0px"> <canvas id="happier-chart"></canvas>  </div>
+
+        <div><img id="map" src="resources/map.png" style="object-fit: contain; width:500px; height: 500px;"> </div>
+
+    </div>
+
+    <center><p style="text-align: left; font-size: 20px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(37, 56, 33); padding:60px; line-height: 1.5; padding-left:150px; padding-right:150px; position:relative"><b>But who is responsible for 
+    all these deforestation?</b> <br><br> From the doughnut chart above, Brazil and the Americas is responsible for most of the deforestation 
+    happening. This data was from 2013, however, 10 years later, and Brazil is still the top contributor to deforestation - deforestation
+     in the Brazilian Amazon during the first half of 2022 broke all records, a result of the increasing destruction taking place under the 
+     presidency of Jair Bolsonaro. <br><br>
+        South America also owns the largest remaining rainforest, the Amazon.  Since 1978 about one million 
+        square kilometers of Amazon rainforest have been destroyed across Brazil, Peru, Colombia, Bolivia, Venezuela, Suriname, Guyana, and 
+        French Guiana. 
+        The Amazon contains nearly a third of all the tropical rainforests left on Earth. Despite covering only around 1% of the
+         planet’s surface, the Amazon rainforest is home to 
+        10% of all the wildlife species. This makes South America both the greatest owner and destructor of biodiversity. <br><br>
+        The map on the right shows the location of the Amazon. This region also corresponds to the area of highest deforestation shown in the
+        interactive map above.
+    </p></center>
     
-    <div><img src="resources/As you can see, Brazil, which owns 60% of the largest remaining forest in the world, the Amazon Rainforest, is also the biggest contributor to deforestation.png" id="koalaCauses"> </div>
 </div>
 
 <!--species that have been affected-->
-<div style="padding-top:30px; position:relative; background-color: rgb(203, 237, 208);" id="container5">
+<div style="padding-top:30px; position:relative; background-color: white; height:auto" id="container5">
     <p style="text-align: center; font-size: 25px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-left: 80px; padding-right: 80px;  color:rgb(37, 56, 33)"><b>The immense clearing of the Amazon rainforest to satisfy anthropocentric desires 
     has caused heart-wrenching impacts on many species, pushing many to the brink of extinction. <br>Here are a few affected species:</b></p>
-    <p style="text-align: center; font-size: 17px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 40px; padding-right: 40px;  color:rgb(37, 56, 33)"><b><I>Click on the pictures to find out more!</I></b></p>
+    <p style="text-align: center; font-size: 16px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 40px; padding-right: 40px;  color:rgb(37, 56, 33)"><I>Click on the pictures to find out more!</I></p>
     <table>
         <tr class="intable1">
-            <td class="intable1" ><img src="resources/GLT.png" style="object-fit: contain; width:250px; height: 250px;" onclick="GLT()" id="pointer1"></td>
+            <td class="intable1" ><img src="resources/GLT.png" style="object-fit: contain; width:300px; height: 300px;" onclick="GLT()" id="pointer1"></td>
             <td class="intable1" id="golden"></td>
          </tr>
         
          
          <tr class="intable1">
-            <td class="intable1" ><img src="resources/Jaguar.png" style="object-fit: contain; width:250px; height: 250px;" onclick="jaguar()" id="pointer2"></td>
+            <td class="intable1" ><img src="resources/Jaguar.png" style="object-fit: contain; width:300px; height: 300px;" onclick="jaguar()" id="pointer2"></td>
             <td class="intable1" id="jag"></td>
         </tr>
         
         <tr class="intable1">
-            <td class="intable1"><img src="resources/Spix.png" style="object-fit: contain; width:250px; height: 250px;" onclick="macaw()" id="pointer3"></td>
+            <td class="intable1"><img src="resources/Spix.png" style="object-fit: contain; width:300px; height: 300px;" onclick="macaw()" id="pointer3"></td>
             <td class="intable1" id="spinx"></td>
         </tr>
         
@@ -105,45 +145,195 @@
 </div>
 
 <!--LPI chart-->
-<div style="padding-top:30px" id="container6" style="position:relative">
+<div  id="container6" style="position:relative; height: auto; margin:0px; padding:0px;padding-top:30px; padding-bottom:30px">
     <p id="lostBio"><mark id=mark2>How much biodiveristy have we lost?</mark></p>
     <center><div id="livingPlanet"><canvas id="LPIchart"></canvas></div></center>
-    <p class="LPIexp" style="text-align:center ;font-size:20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">The Living Planet Index (LPI) is a measure of the state of the world's biological diversity based on population 
-        trends of vertebrate species from terrestrial, freshwater and marine habitats. The LPI was adopted by the Convention 
-        of Biological Diversity (CBD) as an indicator of progress towards its 2011-2020 targets and can play an important role 
-        in monitoring progress towards the post-2020 goals and targets negotiated at COP15.</p>
-    <p class="LPIexp" style="text-align:center ; font-size:20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">The index represents 31,821 populations of 5,230 species.</p>
-    <p class="LPIexp" style="text-align:center ; font-size:20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">As seen from this graph, the LPI has decreased drastically from a value of 1 in 1970 to a mere 0.308 in 2018.</p>
+    <p class="LPIexp" style="text-align:left ;font-size:20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top: 40px; line-height: 1.5; color:rgb(37, 56, 33); padding-left: 150px; padding-right: 150px; margin:0px">
+        <b>We have talked about biodiversity loss in the Amazon, how about on a global scale? </b> <br><br>The Living Planet Index (LPI) is published biennially in WWF's Living Planet Report(LPR), a leading 
+        science-based publication on the state of the planet and associated challenges and solutions. The LPR is produced in collaboration 
+        with Zoological Society of London(ZSL) and a number of other organisations, measuring human pressures and impacts on the planet.
+        The Living Planet Index (LPI) measures the state of the world's biological diversity based on population 
+        trends of vertebrate species from terrestrial, freshwater and marine habitats. The index represents 31,821 populations
+         of 5,230 species.
+        <br><br> The LPI plays an important role 
+        in monitoring progress towards the post-2020 goals and targets negotiated at COP15. 
+        As seen from this graph, the LPI has decreased drastically from a value of 1 in 1970 to a mere 0.308 in 2018. 
+        Particularly stark declines are shown in the Latin America and Caribbean region (94%). 
+        The main drivers of wildlife population decline around the world are habitat degradation and loss(deforestation), exploitation,
+        the introduction of invasive species, pollution, climate change and disease.</p>
+   
  </div>
 
-
 <!-- causes of deforestation with bar chart & drivers of deforestation brazil stacked-->
-<div id="container7" style="padding:30px; height: 150%; background-color: #455540; position: relative; margin:0px">
-    <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; color: white" id="but">But...what causes deforestation?</p>
+<div id="container7" style="padding-top:20px; padding-bottom:0px; background-color: rgb(224, 242, 226); position: relative; margin:0px">
+    <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; color: #455540" id="but"><b>But...what causes deforestation?</b></p>
     <div id="flexGraphs">
         <div id="causesGraph" style="padding:0px"><canvas id="causes" ></canvas></div>
+        
+       
         <div id="stackedCausesGraph" style="padding-top: 5px; width:600px; height:500px"> <canvas id="driversStacked" width="550" height="550"></canvas></div>
+       
     </div>
-    <div><img src="resources/causeskoala.png" id="beefKoala"></div>
-    <div><img src="resources/Koala2.png" id="soyKoala"></div>
+   <img src="resources/causeskoala.png" id="beefKoala">
+    <img src="resources/Koala2.png" id="soyKoala">
 </div>
-
 
 <!-- explanation on why beef consumption has increased so much-->
-<div class="container8" style="height:100%; margin:0px">
+<div id="container8" style="height:auto; margin:0px; position:relative">
     <div class="vertical-center">
-        <div><button onclick="document.getElementById('human').src='resources/economicgrowth.png'" id="whee">
-        Click me to find out why there <br>is an increase in demand for beef!</button></div>
-    
-        <div><img id="human" src="resources/tree.png" style="width: 800px;
-            height: 800px;
-            object-fit: contain;"></div>
+       <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align:center; font-size: 40px; color: rgb(199, 233, 204); margin:0px; padding-top:60px"> <b>What is causing such a high demand for the red meat?</b></p>
+        <div style="margin:0px; padding:0px"><center><img id="human" src="resources/tree.png" style="width: 900px;
+            height: 900px; object-fit: contain; position:relative;
+         margin-top:-10%"></center></div>
+
+        <div style="padding:0px; margin:0px"><center><button onclick="beefExp()" id="whee">
+                Click me to find out why there <br>is an increase in demand for beef!</button></center></div>
     </div>
 </div>
 
-<!-- impacts of deforestation-->
-<div id="container9" style="height: 100%; background-color: rgb(203, 237, 208); margin: 0px" >
-    <p id="care"></p>
+<!--Flip Card-->
+<div id = container9 style="height:auto; background-color: rgb(203, 237, 208); margin:0px; position: relative;" onmouseover="typeWriter2()">
+    <center><p id="care" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; color: #455540; margin:0px;  padding-top: 80px;" ><b></b></p></center>
+    <div id="flexflex" style="padding-top:30px">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="resources/Biodiversity.png" alt="Avatar" style="width:320px;height:320px;">
+             </div>
+
+            <div class="flip-card-back">
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px; padding:20px ">Forests provide food and shelter for biodiversity. More than half the world's land-based plants 
+                and animals, and three-quarters of all birds, live in and around forest. As mentioned above, deforestation has already caused drastic adverse
+                 impacts on diversity, causing beautiful species such as the Spix Macaw to go extinct.</p>
+            </div>
+        </div>
+    </div>
+    
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="resources/climatechange.png" alt="Avatar" style="width:320px;height:320px;">
+          </div>
+          <div class="flip-card-back">
+            <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px; padding:10px ">Trees absorb and store carbon dioxide. If forests are cleared, or even disturbed, they release carbon 
+                dioxide and other greenhouse gases. Forest loss and damage is the cause of around 10% of global warming. This can cause a chain of
+            impacts and cause the imbalance of ecosystems. It can also cause a vicious cycle where global warming results in more wildfires, which adds to deforestation, exacerbating global warming.</p>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="resources/health.png" alt="Avatar" style="width:320px;height:320px;">
+          </div>
+          <div class="flip-card-back">
+            <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px; padding:20px ">With wild habitats destroyed and human life ever expanding, the line between animal and human areas 
+                blurs, opening the door to zoonotic diseases.
+                In 2014, for example, the Ebola virus killed over 11,000 people in West Africa after fruit bats transmitted the disease to 
+                a toddler who was playing near trees where bats were roosting.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="resources/people.png" alt="Avatar" style="width:320px;height:320px;">
+          </div>
+          <div class="flip-card-back">
+            <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px; padding:14px "> 
+                Over 1.6 billion people, many among the rural poor, depend on forests for food or fuel,
+                 and 70 million people worldwide - including many Indigenous communities - call forests home. Forests provide us with 
+                 oxygen, shelter, jobs, water, nourishment and fuel. With so many people dependent on forests, the fate of our forests may 
+                 determine our own fate as well. Millions of people rely directly on forests as their home or for making a living.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <center><p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; color: #455540; margin:0px;  padding-top: 80px;" ><b>Take action.</b></p></center>
+   
+    <div id="flexflex2" style="padding-top:30px">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="resources/solution2.png" alt="Avatar" style="width:320px;height:320px;">
+              </div>
+              <div class="flip-card-back">
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px; padding:20px ">
+                    Many people simply don’t realise that the food we eat and the things we consume can a cause of deforestation. To reduce deforestation, we need everyone to know about the problem.  
+                    Talk to the people around you, raise awareness about the issue and what we stand to lose.  
+                    
+                    </p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="resources/solution1.png" alt="Avatar" style="width:320px;height:320px;">
+              </div>
+              <div class="flip-card-back">
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px; padding:14px "> 
+                    Be aware of what you are consuming. Consume only what you need, reduce consumption of meat and grow your own food whenever possible.
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+<!--contact form-->
+<div id="container10" style="height:60%; background-color: white; margin:0px; position: relative; padding-top: 40px ">
+ <center> <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:30px; padding:0px; margin:0px; text-align: center;">Connect with us!</p>
+    <form method="post">
+        <table >
+            <tr>
+                <td><input type="text" name="name" placeholder="Name" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" name="email" placeholder="Email" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"></td>
+            </tr>
+
+            <tr>
+                <td><textarea placeholder="Type any thoughts or questions about deforestation here!" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="submit" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:16px" onClick="alert('Thank you for your response. An email will be sent to you shortly.');"></td>
+            </tr>
+        </table> 
+    </form>
+</div>
+
+<!--diaries-->
+<div>
+    <p style="font-size: 35px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Diaries</b></p>
+    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 final project diary week 9.docx">Week 9 diary</a></p>
+    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 final project diary week 10.docx">Week 10 diary</a></p>
+    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 final project diary week 11.docx">Week 11 diary</a></p>
+    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 Final Project Diary Week 12.docx">Week 12 diary</a></p>
+
+</div>
+
+
+<!--pledge
+
+
+<h2 style="font-family: Andale Mono; font-size: 30px;">Every pledge counts.</h2>
+
+<input type="button" id="pledge" value="I pledge to play my part" onclick="hello()">
+
+<p id="IPledge" style="font-family: Andale Mono; font-size: 22px;">1349 people have pledged to play their part.</p>
+
+ </center> -->
+
+ <!-- impacts of deforestation
+<div id="container9" style="height: 100%; position: relative; background-color: rgb(203, 237, 208); margin: 0px; padding:0px" onmouseover="typeWriter2()" >
+    <center><p id="care" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px; color: #455540; margin:0px;  padding-top: 50px;" ><b></b></p></center>
 
     <div class="flexImages">
         <div><img src="resources/11.png" style="object-fit: contain; width:300px; height: 300px;"></div>
@@ -153,17 +343,24 @@
     </div>
 
     <div class="flexContent">
-        <div><p>Biodiversity: Forests provide food and shelter for biodiversity. More than half the world's land-based plants and animals, and three-quarters of all birds, live in and around forest.</p></div>
-        <div><p>Climate change:Trees absorb and store carbon dioxide. If forests are cleared, or even disturbed, they release carbon dioxide and other greenhouse gases.  Forest loss and damage is the cause of around 10% of global warming.</p></div>
-        <div><p>Health and diseases:With wild habitats destroyed and human life ever expanding, the line between animal and human areas blurs, opening the door to zoonotic diseases.
-            In 2014, for example, the Ebola virus killed over 11,000 people in West Africa after fruit bats transmitted the disease to a toddler who was playing near trees where bats were roosting.</p></div>
-        <div><p>People: Millions of people rely directly on forests as their home or for making a living.
-            There are some 250 million people who live in forest and savannah areas and depend on them for subsistence and income—many of them among the world’s rural poor.</p></div>
+        <div><p> <b><u>Biodiversity</u></b>:   Forests provide food and shelter for biodiversity. More than half the world's land-based plants 
+            and animals, and three-quarters of all birds, live in and around forest. As mentioned above, deforestation has already caused drastic adverse
+             impacts on diversity, causing beautiful species such as the Spix Macaw to go extinct.</p></div>
+        <div><p><b><u>Climate Change</u></b>:   Trees absorb and store carbon dioxide. If forests are cleared, or even disturbed, they release carbon 
+            dioxide and other greenhouse gases. Forest loss and damage is the cause of around 10% of global warming. This can cause a chain of
+        impacts and cause the imbalance of ecosystems. It can also cause a vicious cycle where global warming results in more wildfires, which adds to deforestation, exacerbating global warming.</p></div>
+        <div><p><b><u>Health & Diseases</u></b>:   With wild habitats destroyed and human life ever expanding, the line between animal and human areas 
+            blurs, opening the door to zoonotic diseases.
+            In 2014, for example, the Ebola virus killed over 11,000 people in West Africa after fruit bats transmitted the disease to 
+            a toddler who was playing near trees where bats were roosting.</p></div>
+        <div><p><b><u>People</u></b>:   Millions of people rely directly on forests as their home or for making a living.
+            There are some 250 million people who live in forest and savannah areas and depend on them for subsistence and income—many 
+            of them among the world’s rural poor.</p></div>
     </div>
 
-</div>
+</div> -->
 
-    <!--<table class="table1">
+ <!--<table class="table1">
        
         <tr class="intable1">
             <td class="intable1">Biodiversity: They provide food and shelter for biodiversity. More than half the world's land-based plants and animals, and three-quarters of all birds, live in and around forest. </td>
@@ -183,59 +380,6 @@
 </div> -->
 
 <!-- adding a contact form here-->
-<center>
-
-<div id="container10" style="height:100%; ">
-    <p style="font-family:Andale Mono; font-size:30px">Connect with us!</p>
-<form method="post">
-    <table >
-        <tr>
-            <td style="font-family:Helvetica Neue">Name</td>
-            <td><input type="text" name="name" ></td>
-         </tr>
-         <tr>
-            <td>Email</td>
-            <td><input type="text" name="email" ></td>
-        </tr>
-        <tr>
-            <td>Queries</td>
-            <td><textarea></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="submit" onClick="alert('Thank you for your response. An email will be sent to you shortly.');"></td>
-        </tr>
-        </table>
-    </form>
-
-</center>
-
-<!--pledge-->
-<center>
-
-<h2 style="font-family: Andale Mono; font-size: 30px;">Every pledge counts.</h2>
-
-<input type="button" id="pledge" value="I pledge to play my part" onclick="hello()">
-
-<p id="IPledge" style="font-family: Andale Mono; font-size: 22px;">1349 people have pledged to play their part.</p>
-
- 
-</center> 
-</div>
-
-
-<div>
-    <p style="font-size: 35px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Diaries</b></p>
-    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 final project diary week 9.docx">Week 9 diary</a></p>
-    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 final project diary week 10.docx">Week 10 diary</a></p>
-    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 final project diary week 11.docx">Week 11 diary</a></p>
-    <p style="font-size: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="NM2207 Final Project Diary Week 12.docx">Week 12 diary</a></p>
-
-</div>
-
-
-
-
-
 
 
 </body>
