@@ -1,38 +1,3 @@
-const labelContinent = ["Africa", "North America", "South America", "Asia", "Europe", "Oceania"]
-    
-    
-    
-    const dataObj = {
-        labels: labelContinent,
-        datasets: [
-            {
-                label: "China",
-                data:  [50.4,51,52.4,52,53,53.3],
-                borderWidth: 2,
-                fill: false,
-                backgroundColor: "rgb(230, 187, 129)",
-                borderColor: "rgb(230, 187, 129)"
-            }, ] }
-
-            new Chart("happy-chart",
-            {
-                type: "bar",
-                data: dataObj,
-                options: { 
-                    maintainAspectRatio: false,
-                    legend: {
-                        display: false
-                    },
-                    title: {
-                        display: true,
-                        text: ["Reduction in forested areas over the years"],
-                        fontFamily:"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
-                        fontSize: 25,
-                        fontColor: 'rgb(81, 120, 82)',
-                    }
-                }
-            });
-
 // DOUGHNUT CHART FOR SHARE OF DEFORESTATION
             const labelCountry = ["Brazil", "Americas(excl. Brazil & Mexico)", "Africa", "Indonesia", "Asia and Pacific (excl. Indonesia and India","Mexico","India"]
             const doughnutObj = {
@@ -73,19 +38,6 @@ const labelContinent = ["Africa", "North America", "South America", "Asia", "Eur
                 }
             });
 
-
-/*var i = 0;
-var txt = 'What is deforestation?'; 
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typewriter").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-};
-
-typeWriter(); */
 
 //BAR CHART FOR OVERALL DRIVERS OF DEFORESTATION
 const labelAgriculture = ["beef", "oilseeds", "forestry", "Cereals", "Vegetables", "rice", "other crops", "sugar", "plant-based fibres"];//years in quotes
@@ -140,7 +92,7 @@ new Chart("causes",
                 
                 title: {
                     display: true,
-                    text: ["Overall drivers of deforestation (Fig.1)"],
+                    text: ["Overall drivers of deforestation globally(%) (Fig.1)"],
                     fontFamily: "TrebuchetMS",
                     fontSize: 20,
                     fontColor: 'rgb(64, 94, 58)',
@@ -180,7 +132,7 @@ var causes2 = new Chart("causes", {
 
 
 
-//PLEDGE
+/*PLEDGE
         let counter=1349;
 
         function hello() {
@@ -190,7 +142,7 @@ var causes2 = new Chart("causes", {
             //document.getElementById("headerID").innerHTML = counter;
             document.getElementById("IPledge").innerHTML =   counter+ " " + "people have pledged to play their part." 
             
-        }
+        } */
 
 //LINE CHART FOR LPI INDEX
 
@@ -231,7 +183,7 @@ var causes2 = new Chart("causes", {
                     }
                 });
 
-//functions for species affected information (onclick)
+//FUNCTIONS FOR SPECIES AFFECTED (onclick)
 
                 function GLT() {
                     var x = document.getElementById("golden");
@@ -245,7 +197,7 @@ var causes2 = new Chart("causes", {
                   function jaguar() {
                     var x = document.getElementById("jag");
                     if (x.innerHTML === " ") {
-                      x.innerHTML = "Jaguars are the largest cat in the Americas. Unfortunately, they are also another species in the Amazon currently threatened by the destruction of the ecosystem, and there are <b>only 173000 left in the wild today</b>. Jaguars are strong swimmers and climbers, and require large areas of rainforest and stretches of river bank to survive. They also hunt most animals in the Amazon such as deers and lizards, playing an important part in population control of other species. <br><br> IUCN status: <b>near threatened</b>";
+                      x.innerHTML = "Jaguars are the largest cat in the Americas. Unfortunately, they are also another species in the Amazon currently threatened by the destruction of the ecosystem, and there are <b>only 173000 left in the wild today</b>. Jaguars are strong swimmers and climbers, and require large areas of rainforest and river bank to survive. They also hunt most animals in the Amazon such as deers and lizards, playing an important part in population control of other species. <br><br> IUCN status: <b>near threatened</b>";
                     } else {
                       x.innerHTML = " ";
                     }
@@ -254,7 +206,7 @@ var causes2 = new Chart("causes", {
                   function macaw() {
                     var x = document.getElementById("spinx");
                     if (x.innerHTML === " ") {
-                      x.innerHTML = " The Spix's Macaw gained popular attention for inspiring the characters in the <b>2011 animated film, Rio</b>. The Spix’s Macaw is the rarest parrot species in the world, and were native to the arid lowland forests in the interior and northeast of Brazil. A species of tree <b>(Tabebuia caraiba) was critical to the birds habitat</b>, with one study noting that where these trees had been cleared, the macaw had disappeared. Habitat loss due to agriculture, combined with illegal trapping for the pet trade, have led to their extinction. <br><br> IUCN status: <b>extinct</b> in the wild since 2018";
+                      x.innerHTML = " The Spix's Macaw gained popular attention for inspiring the characters in the <b>2011 animated film, Rio</b>. The Spix’s Macaw is the rarest parrot species in the world, and were native to the forests in the interior and northeast of Brazil. A species of tree <b>(Tabebuia caraiba) was critical to the birds habitat</b>, with one study noting that where these trees had been cleared, the macaw had disappeared. Habitat loss due to agriculture, combined with illegal trapping for the pet trade, have led to their extinction. <br><br> IUCN status: <b>extinct</b> in the wild since 2018";
                     } else {
                       x.innerHTML = " ";
                     }
@@ -481,7 +433,7 @@ const data = fetch(
         title: {
           display: true,
           text: [
-            "Main drivers of deforestation in Brazil (2001-2021) (Fig.2)",
+            "Main drivers of deforestation in Brazil in hectares(2001-2021) (Fig.2)",
           ], //set this to 'Predicting likelihood of deepfake sharing','for Older People'
           fontFamily: "TrebuchetMS",
           fontSize: 20,
